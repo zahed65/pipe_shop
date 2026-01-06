@@ -1,0 +1,146 @@
+{% extends 'catalog/base.html' %}
+
+{% block title %}درباره ما{% endblock %}
+
+{% block content %}
+{% load static %}
+<!-- بخش بنر -->
+<section class="bg-success py-5 text-white">
+    <div class="container">
+        <div class="row align-items-center py-5">
+            <div class="col-md-8">
+                <h1>درباره ما</h1>
+                <p>
+                    در «یاس»، ما به شما بهترین تجهیزات و خدمات تاسیسات ساختمانی را ارائه می‌دهیم تا پروژه‌های شما با
+                    کیفیت بالا و بدون نقص اجرا شوند. با تجربه و تخصص در صنعت، از مشاوره تا نصب و نگهداری، همراه شما
+                    خواهیم بود.
+                    تخصص و تجربه: تیم ما با سال‌ها فعالیت حرفه‌ای، راه‌حل‌های فنی و کارآمد ارائه می‌دهد.
+                    کیفیت تضمینی: محصولات ما از برندهای معتبر و مطابق با استانداردهای جهانی هستند.
+                    پشتیبانی و مشاوره: خدمات مشاوره‌ای و پشتیبانی فنی را در تمام مراحل پروژه ارائه می‌دهیم.
+                    قیمت رقابتی: بهترین قیمت‌ها برای تجهیزات با کیفیت را در اختیار شما قرار می‌دهیم.
+                </p>
+                <p>
+                <h1>با مدیریت شهرام مظفری</h1>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <img src="{% static 'catalog/assets/img/about-hero.png' %}" alt="About Hero" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- بخش خدمات -->
+<section class="container py-5">
+    <div class="row text-center pt-5 pb-3">
+        <div class="col-lg-6 m-auto">
+            <h1 class="h1">مدارک </h1>
+            <p></p>
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col-md-6 col-lg-3 pb-5">
+            <div class="h-100 py-5 services-icon-wap shadow">
+                <div class="h1 text-success text-center">
+                    <img src="{% static 'catalog/assets/img/1.jpg' %}" alt="About Hero" class="img-fluid">
+                </div>
+                <h2 class="h5 mt-4 text-center">گواهینامه مهارت</h2>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 pb-5">
+            <div class="h-100 py-5 services-icon-wap shadow">
+                <div class="h1 text-success text-center"><<img src="{% static 'catalog/assets/img/2.jpg' %}"
+                                                               alt="About Hero" class="img-fluid"></div>
+                <h2 class="h5 mt-4 text-center">شرکت نونام پایپ</h2>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 pb-5">
+            <div class="h-100 py-5 services-icon-wap shadow">
+                <div class="h1 text-success text-center"><img src="{% static 'catalog/assets/img/3.jpg' %}"
+                                                              alt="About Hero" class="img-fluid"></div>
+                <h2 class="h5 mt-4 text-center">پیمانکار اجرای تاسیسات</h2>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 pb-5">
+            <div class="h-100 py-5 services-icon-wap shadow">
+                <div class="h1 text-success text-center"><i class="fa fa-user"></i></div>
+                <h2 class="h5 mt-4 text-center">پشتیبانی ۲۴ ساعته</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- بخش برندها -->
+<section class="bg-light py-5">
+    <div class="container my-4">
+        <div class="row text-center py-3">
+            <div class="col-lg-6 m-auto">
+                <h1 class="h1">برندهای ما</h1>
+                <p>ما با برندهای معتبر همکاری می‌کنیم تا بهترین کیفیت را ارائه دهیم.</p>
+            </div>
+            <div class="col-lg-9 m-auto tempaltemo-carousel">
+                <div class="row d-flex flex-row">
+                    <div class="col-1 align-self-center">
+                        <a class="h1" href="#templatemo-slide-brand" role="button" data-bs-slide="prev">
+                            <i class="text-dark fas fa-chevron-left"></i>
+                        </a>
+                    </div>
+
+                    <div class="col">
+                        <div class="carousel slide carousel-multi-item pt-2 pt-md-0" id="templatemo-slide-brand"
+                             data-bs-ride="carousel">
+                            <div class="carousel-inner product-links-wap" role="listbox">
+                                <!-- اسلاید اول -->
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-3 p-md-5"><a href="#"><img class="img-fluid brand-img"
+                                                                                   src="{% static 'catalog/assets/img/brand_01.png' %}"
+                                                                                   alt="Brand Logo"></a></div>
+                                        <div class="col-3 p-md-5"><a href="#"><img class="img-fluid brand-img"
+                                                                                   src="{% static 'catalog/assets/img/brand_02.png' %}"
+                                                                                   alt="Brand Logo"></a></div>
+                                        <div class="col-3 p-md-5"><a href="#"><img class="img-fluid brand-img"
+                                                                                   src="{% static 'catalog/assets/img/brand_03.png' %}"
+                                                                                   alt="Brand Logo"></a></div>
+                                        <div class="col-3 p-md-5"><a href="#"><img class="img-fluid brand-img"
+                                                                                   src="{% static 'catalog/assets/img/brand_04.png' %}"
+                                                                                   alt="Brand Logo"></a></div>
+                                    </div>
+                                </div>
+                                <!-- اسلاید دوم -->
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-3 p-md-5"><a href="#"><img class="img-fluid brand-img"
+                                                                                   src="{% static 'catalog/assets/img/brand_01.png' %}"
+                                                                                   alt="Brand Logo"></a></div>
+                                        <div class="col-3 p-md-5"><a href="#"><img class="img-fluid brand-img"
+                                                                                   src="{% static 'catalog/assets/img/brand_02.png' %}"
+                                                                                   alt="Brand Logo"></a></div>
+                                        <div class="col-3 p-md-5"><a href="#"><img class="img-fluid brand-img"
+                                                                                   src="{% static 'catalog/assets/img/brand_03.png' %}"
+                                                                                   alt="Brand Logo"></a></div>
+                                        <div class="col-3 p-md-5"><a href="#"><img class="img-fluid brand-img"
+                                                                                   src="{% static 'catalog/assets/img/brand_04.png' %}"
+                                                                                   alt="Brand Logo"></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-1 align-self-center">
+                        <a class="h1" href="#templatemo-slide-brand" role="button" data-bs-slide="next">
+                            <i class="text-dark fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

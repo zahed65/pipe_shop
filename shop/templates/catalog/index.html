@@ -1,0 +1,186 @@
+{% extends 'catalog/base.html' %}
+{% block title %}خانه{% endblock %}
+{% block content %}
+{% load static %}
+<!-- Start Banner Hero -->
+<div id="template-mo-zay-hero-carousel" class="carousel slide" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="1"></li>
+        <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+            <div class="container">
+                <div class="row p-5">
+                    <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                        <img class="img-fluid" src="{% static 'catalog/assets/img/banner_img_01.jpg' %}" alt="">
+                    </div>
+                    <div class="col-lg-6 mb-0 d-flex align-items-center">
+                        <div class="text-align-left align-self-center">
+                            <h1 class="h1 text-success"><b>Yas</b> TASISAT</h1>
+                            <h3 class="h2">یاس تاسیسات با نام تجاری ویرا تاسیساتی یاس</h3>
+                            <p>
+                                با تکیه بر کیفیت ممتاز، طراحی متمایز و استانداردهای روز دنیا، راه‌حل‌های حرفه‌ای در حوزه تأسیسات را ارائه می‌دهد. ما با بهره‌گیری از تجربه، تخصص و نوآوری،
+                                محصولاتی بادوام و قابل اعتماد برای پروژه‌های ساختمانی و صنعتی فراهم کرده‌ایم.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+            <div class="container">
+                <div class="row p-5">
+                    <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                        <img class="img-fluid" src="{% static 'catalog/assets/img/banner_img_02.jpg' %}" alt="">
+                    </div>
+                    <div class="col-lg-6 mb-0 d-flex align-items-center">
+                        <div class="text-align-left">
+                            <h1 class="h1">سری L</h1>
+                            <h3 class="h2">پکیج ایران رادیاتور</h3>
+                            <p>یکی از رایج‌ترین سیستم‌های گرمایشی در ایران است که آب گرم مصرفی و گرمایش شوفاژ را تامین می‌کند، مزایایی چون راندمان بالا، ایمنی، استقلال واحد، و ابعاد کوچک دارد و در مدل‌های دیواری (فن‌دار و بدون فن) و زمینی (مخزن‌دار) با انواع مبدل (تک یا دو مبدله) عرضه می‌شود که مدل‌های فن‌دار و دو مبدله ایمنی و کارایی بالاتری دارند؛ این پکیج‌ها دارای سیستم‌های ایمنی مانند حفاظت در برابر یخ‌زدگی و فشار آب و امکانات دیجیتال برای نمایش خطا هستند و برای واحدهای مختلف با متراژ متفاوت مناسب‌اند </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+            <div class="container">
+                <div class="row p-5">
+                    <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                        <img class="img-fluid" src="{% static 'catalog/assets/img/banner_img_03.jpg' %}" alt="">
+                    </div>
+                    <div class="col-lg-6 mb-0 d-flex align-items-center">
+                        <div class="text-align-left">
+                            <h1 class="h1">کلکتور</h1>
+
+                            <p>کلکتور (Manifold) وسیله‌ای لوله‌ای با خروجی‌های متعدد است که در تأسیسات ساختمان، وظیفه توزیع یکنواخت و کنترل شده آب (گرم و سرد) یا سیالات دیگر به نقاط مختلف مانند واحدها یا طبقات را بر عهده دارد</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <a class="carousel-control-prev text-decoration-none w-auto ps-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="prev">
+        <i class="fas fa-chevron-left"></i>
+    </a>
+    <a class="carousel-control-next text-decoration-none w-auto pe-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="next">
+        <i class="fas fa-chevron-right"></i>
+    </a>
+</div>
+<!-- End Banner Hero -->
+
+<!-- Start Categories of The Month -->
+<section class="container py-5 bg-gray-light">
+    <div class="row text-center pt-3">
+        <div class="col-lg-6 m-auto">
+            <h1 class="h1">تاسیسات  یاس </h1>
+            <p>
+                فروش و اجرای تخصصی تجهزات و تاسیسات ساختمانی
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-4 p-5 mt-3">
+            <img src="{% static 'catalog/assets/img/category_img_01.png' %}" class="rounded-circle img-fluid border">
+            <h5 class="text-center mt-3 mb-3">لوله اتصالات مسی </h5>
+        </div>
+        <div class="col-12 col-md-4 p-5 mt-3">
+            <img src="{% static 'catalog/assets/img/category_img_02.jpg' %}" class="rounded-circle img-fluid border">
+            <h5 class="text-center mt-3 mb-3">لوله اتصالات پی وی سی</h5>
+        </div>
+        <div class="col-12 col-md-4 p-5 mt-3">
+            <img src="{% static 'catalog/assets/img/category_img_03.jpg' %}" class="rounded-circle img-fluid border">
+            <h5 class="text-center mt-3 mb-3">اتصالات کلکتور ترموستاتیکی</h5>
+        </div>
+    </div>
+</section>
+<!-- End Categories of The Month -->
+
+<!-- Start Featured Product -->
+<section class="bg-light">
+    <div class="container py-5">
+        <div class="row text-center py-3">
+            <div class="col-lg-6 m-auto">
+                <h1 class="h1">محصولات </h1>
+                <p>محصولات برگزیده تاسیسات یاس </p>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card h-100">
+                    <a href="#"><img src="{% static 'catalog/assets/img/feature_prod_01.jpg' %}" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <ul class="list-unstyled d-flex justify-content-between">
+                            <li>
+                                <i class="text-warning fa fa-star"></i>
+                                <i class="text-warning fa fa-star"></i>
+                                <i class="text-warning fa fa-star"></i>
+                                <i class="text-muted fa fa-star"></i>
+                                <i class="text-muted fa fa-star"></i>
+                            </li>
+<!--                            <li class="text-muted text-right">$240.00</li>-->
+                        </ul>
+                        <a href="#" class="h2 text-decoration-none text-dark">پکیج</a>
+                        <p class="card-text">استفاده از بهترین برندهای معتبر در بازار لورچ بوتان ایران رادیاتور</p>
+                        <p class="text-muted">نظرات (24)</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card h-100">
+                    <a href="#"><img src="{% static 'catalog/assets/img/feature_prod_02.jpg' %}" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <ul class="list-unstyled d-flex justify-content-between">
+                            <li>
+                                <i class="text-warning fa fa-star"></i>
+                                <i class="text-warning fa fa-star"></i>
+                                <i class="text-warning fa fa-star"></i>
+                                <i class="text-muted fa fa-star"></i>
+                                <i class="text-muted fa fa-star"></i>
+                            </li>
+<!--                            <li class="text-muted text-right">$480.00</li>-->
+                        </ul>
+                        <a href="#" class="h2 text-decoration-none text-dark">کلکتور</a>
+                        <p class="card-text">کلکتور وسیله‌ای در تأسیسات ساختمان است که یک لوله اصلی با چندین خروجی برای توزیع یکنواخت سیال (آب گرم، سرد، گاز) به مسیرهای مختلف دارد؛ «برندها» یا «شیرهای کلکتور» نیز متعلقات این سیستم هستند که برای کنترل، تنظیم و قطع و وصل جریان در هر شاخه به صورت مجزا نصب می‌شوند</p>
+                        <p class="text-muted">نظرات (48)</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card h-100">
+                    <a href="#"><img src="{% static 'catalog/assets/img/feature_prod_03.jpg' %}" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <ul class="list-unstyled d-flex justify-content-between">
+                            <li>
+                                <i class="text-warning fa fa-star"></i>
+                                <i class="text-warning fa fa-star"></i>
+                                <i class="text-warning fa fa-star"></i>
+                                <i class="text-warning fa fa-star"></i>
+                                <i class="text-warning fa fa-star"></i>
+                            </li>
+<!--                            <li class="text-muted text-right">$360.00</li>-->
+                        </ul>
+                        <a href="#" class="h2 text-decoration-none text-dark">لوله 5 لایه </a>
+                        <p class="card-text">دو لایه چسب و یک لایه آلومینیوم در وسط هستند که مزایایی چون مقاومت حرارتی بالا (تا 95°C)، تحمل فشار زیاد، انعطاف‌پذیری، عدم رسوب‌پذیری، و بهداشتی بودن برای آب آشامیدنی را ارائه می‌دهند</p>
+                        <p class="text-muted">نظرات (74)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Featured Product -->
+
+{% endblock %}

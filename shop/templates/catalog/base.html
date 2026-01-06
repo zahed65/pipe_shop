@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+  {% load static %}
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}فروشگاه لوله و پکیج{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'catalog/assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'catalog/assets/css/templatemo.css' %}">
+    <link rel="stylesheet" href="{% static 'catalog/assets/css/custom.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    {% include 'catalog/partials/header.html' %}
+
+    <main class="container my-5">
+      {% block content %}{% endblock %}
+    </main>
+
+    {% include 'catalog/partials/footer.html' %}
+
+    <script src="{% static 'catalog/assets/js/jquery-1.11.0.min.js' %}"></script>
+    <script src="{% static 'catalog/assets/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'catalog/assets/js/custom.js' %}"></script>
+  </body>
+</html>
